@@ -1,0 +1,114 @@
+:root {
+        --clr-primary-dark: hsl(215, 51%, 70%);
+        --clr-primary-light: hsl(178, 100%, 50%);
+    
+        --clr-neutral-100: hsl(217, 54%, 11%);
+        --clr-neutral-200: hsl(216, 50%, 16%);
+        --clr-neutral-300: hsl(215, 32%, 27%);
+        --clr-neutral-400:  hsl(0, 0%, 100%);
+    
+    
+        --ff-primary: 'outfit', sans-serif;
+        --fs-primary: 1.125rem;
+}
+
+body {
+    align-items: center;
+    background-color: var(--clr-neutral-100);
+    display: flex;
+    font-family: var(--ff-primary);
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* There should be a layer of 3 different colors to support the depth */
+.card {
+    background-color: var(--clr-neutral-200);
+    border-radius: 10px;                            /* To round the corner of the card*/
+    padding: 25px;
+    width: 300px;
+}
+
+.card #nft {
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+}
+ /* The background isn't changing color */
+.card #nft:hover {
+    background-color: var(--clr-primary-light);
+    cursor: pointer;
+    filter: opacity(50%);
+}
+
+h1 {
+    color: var(--clr-neutral-400);
+    font-size: var(--fs-primary);
+    font-weight: 600;
+    padding-top: 3px;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+}
+
+/* Primary color is not showing up */
+h1:hover {
+    color: var(--clr-primary-light);
+    cursor: pointer;
+}
+
+.lead {
+    color: var(--clr-primary-dark);
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+/* Position of the icons*/ 
+#eth, #time {
+    margin-left: 5px;
+}
+
+#price {
+    color: var(--clr-primary-light);
+    font-weight: 600;
+}
+
+#clock {
+    color: var(--clr-primary-dark);
+    font-weight: 600;
+    left: 190px;
+    bottom: 20px;
+    position: relative;
+}
+
+/*  Creates the solid line */
+.container{
+    border-bottom: solid 1.5px var(--clr-neutral-300);
+    margin-bottom: 15px;
+}
+
+.card #avatar {
+    border: 1px solid var(--clr-neutral-400);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+}
+
+.card #info {
+    color: var(--clr-primary-dark);
+    margin-left: 15px;
+    position: relative;
+    bottom: 10px;
+}
+
+#name:hover {
+    color: var(--clr-primary-light);
+    cursor: pointer;
+}
+
+.attribution {
+    top: 100px;
+}
+
